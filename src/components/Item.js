@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 function Item({ item }) {
 	let cost, level, imgSrc;
 	if (item.MainImage) {
@@ -41,5 +43,9 @@ function Item({ item }) {
 		</div>
 	);
 }
+
+Item.propTypes = {
+	items: PropTypes.object.isRequired,
+};
 
 export default Item;

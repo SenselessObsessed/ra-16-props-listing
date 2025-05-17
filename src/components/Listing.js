@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import Item from './Item';
 
 function Listing({ items }) {
@@ -11,5 +12,9 @@ function Listing({ items }) {
 		</>
 	);
 }
+
+Listing.propTypes = {
+	items: PropTypes.array.isRequired,
+};
 
 export default Listing;
